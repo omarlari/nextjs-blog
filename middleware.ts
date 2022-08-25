@@ -21,7 +21,7 @@ export function middleware(req: NextRequest) {
   if (country === BLOCKED_COUNTRY) {
     req.nextUrl.pathname = '../pages/login';
   } else {
-    req.nextUrl.pathname = `../pages/index.js`;
+    req.nextUrl.pathname = '../pages/index';
   }
 
   // Rewrite to URL
